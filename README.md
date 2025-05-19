@@ -5,10 +5,8 @@ APPROACH:
 
 
 CHALLENGES:
-1.
 Issue: Users with only one plan type (either savings or investment) were being included initially.
 Solution: Used conditional aggregation (CASE WHEN) to count only funded plans by type. Filtered the final results to only include users with both funded savings and investment plans using WHERE.
 
-2.
 Issue: Missing deposits for some users led to NULL values.
 Solution: Applied COALESCE() on deposit sums to convert NULL to 0.
